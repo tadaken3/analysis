@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>企業の投資情報</title>
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+</head>
+
+<body>
+<div>
+<label class="col-sm-2 control-label">証券コードを入力してください<label>
+
+<form action="#" id="form">
+<input type="text" name="s_code">
+<input type="submit" value = "検索">
+</form>
+
+</div>
+
+<h2>企業名：任天堂</h2>
+
+<!-- 売上高のグラフを入れる -->
+<div class = "boxA">
+<h2>売上高</h2>
+<canvas class="salsChart" width="100%" height="50%" ></canvas>
+</div>
+
+<!-- 営業キャッシュフローのグラフを入れる -->
+<div class = "boxB">
+<h2>営業キャッシュフロー</h2>
+<canvas class = "cashFlowChart" width="100%" height="50%"></canvas>
+</div>
+
+<script src="disp_graph.js"></script> 
+
+</body>
+</html>
